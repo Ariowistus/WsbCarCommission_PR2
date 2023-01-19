@@ -7,18 +7,18 @@ public class CarBase {
 
     public static List<Car> listCars() {
         List<Car> cars = new ArrayList<>();
-        cars.add(new Car(10000, "BMW", 100000, "black", "SUV", false));
-        cars.add(new Car(20000, "Audi", 200000, "white", "premium", false));
-        cars.add(new Car(30000, "Mercedes", 300000, "red", "sedan", false));
-        cars.add(new Car(40000, "Fiat", 400000, "blue", "hatchback", false));
-        cars.add(new Car(50000, "Opel", 500000, "yellow", "SUV", false));
-        cars.add(new Car(60000, "Ford", 600000, "green", "premium", false));
-        cars.add(new Car(70000, "Toyota", 700000, "black", "sedan", false));
-        cars.add(new Car(80000, "Honda", 800000, "white", "hatchback", false));
-        cars.add(new Car(90000, "Mazda", 900000, "red", "SUV", false));
-        cars.add(new Car(100000, "Kia", 1000000, "blue", "premium", false));
-        cars.add(new Car(110000, "Hyundai", 1100000, "yellow", "sedan", false));
-        cars.add(new Car(120000, "Suzuki", 1200000, "green", "hatchback", false));
+        cars.add(new Car(10000, "BMW", 100000, "black", "SUV", false, false, false, false, false));
+        cars.add(new Car(20000, "Audi", 200000, "white", "premium", false, false, false, false, false));
+        cars.add(new Car(30000, "Mercedes", 300000, "red", "sedan", false, false, false, false, false));
+        cars.add(new Car(40000, "Fiat", 400000, "blue", "hatchback", false, false, false, false, false));
+        cars.add(new Car(50000, "Opel", 500000, "yellow", "SUV", false, false, false, false, false));
+        cars.add(new Car(60000, "Ford", 600000, "green", "premium", false, false, false, false, false));
+        cars.add(new Car(70000, "Toyota", 700000, "black", "sedan", false, false, false, false, false));
+        cars.add(new Car(80000, "Honda", 800000, "white", "hatchback", false, false, false, false, false));
+        cars.add(new Car(90000, "Mazda", 900000, "red", "SUV", false, false, false, false, false));
+        cars.add(new Car(100000, "Kia", 1000000, "blue", "premium", false, false, false, false, false));
+        cars.add(new Car(110000, "Hyundai", 1100000, "yellow", "sedan", false, false, false, false, false));
+        cars.add(new Car(120000, "Suzuki", 1200000, "green", "hatchback", false, false, false, false, false));
 
         Collections.shuffle(cars);
         return cars.subList(0, 4);
