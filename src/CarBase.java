@@ -60,6 +60,15 @@ public static List<Car> carsChange() {
                     System.out.println("Wybierz numer samochodu:");
                     int choice = scanner.nextInt();
                     System.out.println("Wybrano samochód: " + availableCars.get(choice-1));
+                    Car selectedCar = availableCars.get(choice-1);
+                    System.out.println("Czy chcesz naprawić skrzynię biegów? (tak/nie)");
+                    String fixGearbox = scanner.next();
+                    if (fixGearbox.equalsIgnoreCase("tak")) {
+                        selectedCar.fixGearbox();
+                        System.out.println("Naprawiono skrzynię biegów i wartość samochodu zwiększyła się o 50%: " + selectedCar);
+                    } else {
+                        System.out.println("Skrzynia biegów nie została naprawiona. Wartość samochodu pozostaje bez zmian: " + selectedCar);
+                    }
                     availableCars.remove(choice-1);
                     break;
                 case 3:
